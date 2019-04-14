@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="784.0" prefWidth="1273.0" stylesheets="@../../css/principal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.paulocollares.worship4j.ihm.cenas.controladores.ControladorTelaPrincipal">
+   <children>
+      <SplitPane dividerPositions="0.5271439811172305" layoutX="174.0" layoutY="133.0" prefHeight="160.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="752.0" prefWidth="760.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="92.0" layoutY="142.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ListView fx:id="listViewCulto" layoutX="73.0" layoutY="86.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TabPane layoutX="68.0" layoutY="70.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <tabs>
+                                  <Tab text="Musicas">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <TextField fx:id="textFielBuscaMusica" disable="true" />
+                                                <ListView fx:id="listViewMusicas" prefHeight="311.0" prefWidth="373.0" />
+                                             </children>
+                                          </VBox>
+                                       </content></Tab>
+                                  <Tab text="Biblia">
+                                       <content>
+                                          <VBox prefHeight="200.0" prefWidth="100.0">
+                                             <children>
+                                                <TextField fx:id="textFielBuscaBiblia" text="Gênesis 1:1" />
+                                                <ListView fx:id="listViewBiblia" prefHeight="313.0" prefWidth="664.0" />
+                                             </children>
+                                          </VBox>
+                                       </content></Tab>
+                                    <Tab text="Videos">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ListView fx:id="listViewVideos" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="752.0" prefWidth="640.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="185.0" layoutY="134.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <HBox layoutX="226.0" layoutY="44.0" prefHeight="29.0" prefWidth="200.0" spacing="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <ToggleButton fx:id="botaoLive" mnemonicParsing="false" onAction="#acaoBotaoLive" selected="true" text="Live" />
+                                    <Separator orientation="VERTICAL" prefHeight="200.0" />
+                                    <ToggleButton fx:id="botaoLogo" mnemonicParsing="false" onAction="#acaoBotaoLogo" text="Logo" />
+                                    <ToggleButton fx:id="botaoBlack" mnemonicParsing="false" onAction="#acaoBotaoBlack" text="Black" />
+                                    <ToggleButton fx:id="botaoClear" mnemonicParsing="false" onAction="#acaoBotaoClear" text="Clear" />
+                                 </children>
+                              </HBox>
+                              <ListView fx:id="listViewAovivo" layoutX="109.0" layoutY="123.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0" />
+                              <AnchorPane fx:id="anchorPaneControlesVideoAovivo" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+                                 <children>
+                                    <Label fx:id="labelInfoVideoAovivo" layoutX="96.0" layoutY="257.0" prefHeight="17.0" prefWidth="405.0" AnchorPane.bottomAnchor="68.0" />
+                                    <HBox alignment="CENTER" layoutY="95.0" prefHeight="59.0" prefWidth="596.0" spacing="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="283.0">
+                                       <children>
+                                          <ToggleButton fx:id="botaoPlayPause" mnemonicParsing="false" onAction="#acaoBotaoPlayPause" text="" />
+                                          <Button fx:id="botaoParar" mnemonicParsing="false" onAction="#acaoBotaoParar" text="" />
+                                          <ToggleButton fx:id="botaoRepetir" mnemonicParsing="false" onAction="#acaoBotaoRepetir" text="" />
+                                          <ToggleButton fx:id="botaoMute" mnemonicParsing="false" onAction="#acaoBotaoMute" text="" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane fx:id="anchorPaneImagemAovivo" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <ImageView fx:id="imagemAovivo" fitHeight="150.0" fitWidth="300.0" layoutX="232.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="0.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <MenuBar layoutY="7.0" prefHeight="29.0" prefWidth="1273.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#acaoMenuSair" text="Sair" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Ajuda">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#acaoMenuAjuda" text="Ajuda" />
+                  <MenuItem mnemonicParsing="false" onAction="#acaoMenuSobre" text="Sobre" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

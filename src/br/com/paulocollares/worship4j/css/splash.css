@@ -1,0 +1,15 @@
+#labelRegistrado{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: #ffffff;
+    -fx-font-size:10px
+}
+
+#labelPorcento{
+    -fx-alignment: CENTER;
+}
+
+#labelTextoSecundario{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-size:12px;
+    -fx-text-fill: #333333;
+}

@@ -1,0 +1,21 @@
+#AnchorPane{
+    -fx-background-color: #000000;
+}
+
+#labelItem{
+    -fx-font-size: 75px;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 0,0,0,8 );
+}
+
+#labelReferencia{
+    -fx-font-size: 50px;
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER_RIGHT;
+    -fx-font-weight: none;
+    -fx-font-style: italic;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 0,0,0,5 );
+}
+

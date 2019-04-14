@@ -1,0 +1,48 @@
+.button{
+    -fx-cursor: hand;
+}
+
+.toggle-button{
+    -fx-cursor: hand;
+}
+
+#anchorPaneImagemAovivo{
+    -fx-background-color: #000000;
+}
+
+#anchorPaneControlesVideoAovivo{
+    -fx-background-color: #333333;
+}
+
+#labelInfoVideoAovivo{
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER;
+}
+
+#botaoPlayPause{
+    -fx-graphic: url('../imagens/blue_play.png');
+}
+
+#botaoPlayPause:selected{
+    -fx-graphic: url('../imagens/blue_pause.png');
+}
+
+#botaoRepetir{
+    -fx-graphic: url('../imagens/grey_repeat.png');
+}
+
+#botaoRepetir:selected{
+    -fx-graphic: url('../imagens/blue_repeat.png');
+}
+
+#botaoMute{
+    -fx-graphic: url('../imagens/button_blue_sound.png');
+}
+
+#botaoMute:selected{
+    -fx-graphic: url('../imagens/button_gray_sound.png');
+}
+
+#botaoParar{
+    -fx-graphic: url('../imagens/blue_stop.png');
+}

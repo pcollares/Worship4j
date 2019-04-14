@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="364.0" prefWidth="600.0" stylesheets="@../../css/splash.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.paulocollares.worship4j.ihm.cenas.controladores.ControladorSplash">
+   <children>
+      <ProgressBar fx:id="barra" layoutX="2.0" layoutY="338.0" prefHeight="30.0" prefWidth="600.0" progress="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView id="imagem" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../imagens/splash.png" />
+         </image></ImageView>
+      <Label fx:id="labelTextoSecundario" layoutX="233.0" layoutY="318.0" prefHeight="17.0" prefWidth="364.0" AnchorPane.rightAnchor="5.0" />
+      <Label fx:id="labelPorcento" layoutX="8.0" layoutY="345.0" prefHeight="17.0" prefWidth="584.0" text="0%" />
+      <Label fx:id="labelRegistrado" layoutX="259.0" layoutY="1.0" prefHeight="17.0" prefWidth="338.0" text="Registrado para: " AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="1.0" />
+   </children>
+</AnchorPane>
